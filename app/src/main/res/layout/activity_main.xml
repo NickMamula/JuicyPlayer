@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:clickable="true">
+
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/ibtnPlay"
+        android:background="@drawable/animation_play"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:clickable="true"
+        android:onClick="onClickStart" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/ibtnPrevious"
+        android:background="@drawable/animation_previous"
+        android:layout_alignTop="@+id/ibtnPlay"
+        android:layout_toLeftOf="@+id/ibtnPlay"
+        android:layout_toStartOf="@+id/ibtnPlay"
+        android:layout_marginRight="85dp"
+        android:layout_marginEnd="43dp"
+        android:clickable="true"
+        android:onClick="onClick" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/ibtnNext"
+        android:background="@drawable/animation_next"
+        android:layout_alignTop="@+id/ibtnPlay"
+        android:layout_toRightOf="@+id/ibtnPlay"
+        android:layout_toEndOf="@+id/ibtnPlay"
+        android:layout_marginLeft="85dp"
+        android:layout_marginStart="37dp"
+        android:clickable="true"
+        android:onClick="onClick" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_above="@+id/ibtnPlay"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/ibtnStop"
+        android:background="@drawable/animation_stop"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/ibtnPlay"
+        android:layout_toStartOf="@+id/ibtnPlay"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="0dp"
+        android:onClick="onClick" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/ibtnModePlay"
+        android:background="@drawable/animation_mode"
+        android:layout_alignTop="@+id/ibtnStop"
+        android:layout_toRightOf="@+id/ibtnPlay"
+        android:layout_toEndOf="@+id/ibtnPlay"
+        android:layout_marginLeft="15dp"
+        android:onClick="onClick" />
+
+</RelativeLayout>
